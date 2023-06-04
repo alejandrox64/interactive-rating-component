@@ -1,0 +1,130 @@
+@import url("https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap");
+body {
+  background-color: hsl(216, 12%, 8%);
+  color: hsl(0, 0%, 100%);
+  font-size: 15px;
+  font-family: "Overpass", sans-serif;
+  padding: 0px;
+  margin: 0px;
+  height: 100vh;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* card */
+.card-1 {
+  border-radius: 2rem;
+  background-color: hsl(213, 19%, 18%);
+  width: 389px;
+  height: 380px;
+  padding: 31px;
+  display: flex;
+  flex-direction: column;
+}
+
+/* head */
+.logo {
+  background-color: hsl(213, 19%, 30%);
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+.logo .icon {
+  color: hsl(25, 97%, 53%);
+  position: relative;
+  top: 16px;
+  left: 16px;
+}
+
+/* content */
+.content h1, .content-card-2 h1 {
+  font-weight: 700;
+  margin-top: 2rem;
+}
+.content .description, .content-card-2 .description {
+  color: hsl(217, 12%, 63%);
+  line-height: 1.6rem;
+  font-weight: 400;
+  margin: 0 1.5rem 2rem 0;
+}
+
+/* interaction */
+.interaction {
+  display: flex;
+  flex-direction: column;
+}
+.interaction .options {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 31px;
+}
+.interaction .options .btn {
+  color: hsl(217, 12%, 63%);
+  font-weight: 700;
+  border: none;
+  background-color: hsl(213, 19%, 30%);
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}
+.interaction .options .btn:hover {
+  cursor: pointer;
+  background-color: hsl(25, 97%, 53%);
+}
+.interaction .options .btn:focus {
+  background-color: hsl(213, 19%, 50%);
+}
+
+.submit {
+  color: hsl(0, 0%, 100%);
+  letter-spacing: 0.1rem;
+  border: none;
+  border-radius: 25px;
+  padding: 0.8rem 0;
+  background-color: hsl(25, 97%, 53%);
+}
+.submit:hover {
+  cursor: pointer;
+  color: hsl(25, 97%, 53%);
+  background-color: hsl(0, 0%, 100%);
+}
+
+/* card 2 */
+.card-2 {
+  border-radius: 2rem;
+  background-color: hsl(213, 19%, 18%);
+  width: 389px;
+  height: 380px;
+  padding: 31px;
+  display: none;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+}
+
+/* head */
+.range {
+  padding: 5px 17px;
+  border-radius: 15px;
+  background-color: hsl(213, 19%, 30%);
+  color: hsl(25, 97%, 53%);
+}
+
+/* description */
+.description-content {
+  padding: 0 1.5rem;
+  line-height: 25px;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}/*# sourceMappingURL=styles.css.map */

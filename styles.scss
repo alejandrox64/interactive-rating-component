@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+
+@mixin card {
+    border-radius: 2rem;
+    background-color: $Dark-Blue;
+    width: 389px;
+    height: 380px;
+    padding: 31px;
+}
+@mixin sizes {
+    h1 {
+        font-weight: 700;
+        margin-top: 2rem;
+    }
+    .description {
+        color: $Light-Grey;
+        line-height: 1.6rem;
+        font-weight: 400;
+        margin: 0 1.5rem 2rem 0;
+    }
+}
+
+// Primary
+$Orange: hsl(25, 97%, 53%);
+
+// Neutral
+$White: hsl(0, 0%, 100%);
+$Light-Grey: hsl(217, 12%, 63%);
+$Medium-Grey: hsl(216, 12%, 54%);
+$Light-blue: hsl(213, 19%, 50%);
+$Light-Dark-Blue: hsl(213, 19%, 30%);
+$Dark-Blue: hsl(213, 19%, 18%);
+$Very-Dark-Blue: hsl(216, 12%, 8%);
+
+// Tipography
+$font: 'Overpass', sans-serif;
+//===============================================\\
+
+body {
+    background-color: $Very-Dark-Blue;
+    color: $White;
+    font-size: 15px;
+    font-family: $font;
+    padding: 0px;
+    margin: 0px;
+    height: 100vh;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* card */
+
+.card-1 {
+    @include card;
+    display: flex;
+    flex-direction: column;
+}
+
+/* head */
+
+.logo {
+    background-color: $Light-Dark-Blue;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    .icon {
+        color: $Orange;
+        position: relative;
+        top: 16px;
+        left: 16px;        
+    }
+}
+
+/* content */
+.content, .content-card-2 {
+    @include sizes;
+}
+
+
+/* interaction */
+
+.interaction {
+    display: flex;
+    flex-direction: column;
+    
+    .options {
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 31px;
+        .btn {
+            &:hover {
+                cursor: pointer;
+                background-color: $Orange;
+            }
+            &:focus {
+                background-color: $Light-blue;
+            }
+            color: $Light-Grey;
+            font-weight: 700;
+            border: none;
+            background-color: $Light-Dark-Blue;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+        }
+    }
+}
+.submit {
+    color: $White;
+    letter-spacing: .1rem;
+    border: none;
+    border-radius: 25px;
+    padding: .8rem 0;
+    background-color: $Orange;
+    &:hover {
+        cursor: pointer;
+        color: $Orange;
+        background-color: $White;
+    }
+}
+
+/* card 2 */
+
+.card-2 {
+    @include card;
+    display: none;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+}
+
+/* head */
+.range {
+    padding: 5px 17px;
+    border-radius: 15px;
+    background-color: $Light-Dark-Blue;
+    color: $Orange;
+}
+
+
+/* description */
+
+.description-content {
+    padding: 0 1.5rem;
+    line-height: 25px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
